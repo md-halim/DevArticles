@@ -1,0 +1,283 @@
+L01:css------
+1 > selector 
+2 > comment
+/* Love my country */
+3 > color
+	color:red; 
+	rgb(red,green,blue);
+	rgba(red,green,blue, alpha);
+	hsl(hue,saturation,lightness);
+	hsla(hue,saturation,lightness,alpha);
+4 > Background
+	background-color:red; 
+	background-image: url(img source), 
+	background-repeat: repeat, 
+	background-position:top right;
+	background-attachment:(fixed,scroll),
+	background:red url() repeat top right; shorthand
+5 > Border
+	border-top,right,bottom,left;
+	border-width: 2px; 
+	border-style: (dotted,dashed,solid etc), 
+	border-color: red; 
+	border-top-style: (dotted,solid etc); 
+	border: (width style color) --shorthand
+	border-radius: 10px 10px 10px 10px;
+6 > Margin
+	margin-top:2px;
+	margin-right:10px;
+	margin-bottom:20px;
+	margin-left:10px; 
+	margin-collapse:0 0 2px 0;
+	margin: auto;
+7 > Padding
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	box-sizing:border-box;
+8 > Height
+	max-height:100px;
+	min-height:150px;
+9 > Width
+	max-width:10px;
+	min-width:10px; 
+	width:auto;
+10> Box Model
+	content
+	padding, 
+	border, 
+	margin
+11> Outline
+	outline-style:dotted red;
+	outline-color:red; 
+	outline-width:20px
+	outline-offset:10px
+	outline:(width style color ) -shorthand
+12> Text
+	text-align:(right,left,center,justify)
+	direction: rtl
+	unicode-bidi: bidi-override
+	vertical-align: (baseline, sub,super,top, bottom)
+	text-decoration: (none, overline,line-through,underline)
+	text-transform: (upercase,lowercase,capitalize)
+	text-spacing(text-indent: 50px;letter-spacing: 3px;line-height: 0.8;word-spacing: 10px;
+	white-space: nowrap;
+	text-shadow: 2px 2px 5px red;
+
+13> Fonts
+
+	font-family:"sans-serif", "serif" ,"monospace", "cursive",fantasy;
+	font-family: Arial, sans-serif;
+	font-family: verdana,sans-serif;
+	font-family: Helvetica,sans-serif;
+	font-family: Tahoma,sans-serif;
+	font-family: Trebuchet,sans-serif;
+	font-family: "Times new roman",serif;
+	font-family: Georgia,serif;
+	font-family: "Courier New", serift
+
+14> Icon
+	<head>
+		<!-- font awesome icon -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.6.3/css/fontawesome.min.css">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Google Icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	
+15> Add css
+	Inline css <p style="color:red">
+	Internal css <head> <style> p{color:red;} </style> </head>
+	External css style.css
+16> Links
+	a:link - a normal, unvisited link
+	a:visited - a link the user has visited
+	a:hover - a link when the user mouses over it
+	a:active - a link the moment it is clicked
+17> Lists
+	<ul>, <ol>
+	list-style-type:(circle, uper-roman,lower-	alpha;
+	list-style-image:url();
+	list-style-position:inside;
+	list-style: squar inside url(); shorthand
+18> Tables
+	<table>, <th> <td>
+	border: 2px solid red;
+	width: 100%;
+	height: 50px;
+	text-align:left;
+	vertical-align:bottom;
+	striped tables
+	tr:nth-child(even){};
+	table color
+	overflow-x:auto;
+	
+19> Display
+	display:block; inline;hidden;visibility
+	block level elements:
+	<div>
+	<h1> - <h6>
+	<p>
+	<form>
+	<header>
+	<footer>
+	<section>
+	inline-elements
+	<span>
+	<a>
+	<img>
+	<li> display:inline;
+
+20> Max-width
+	max-width: 200px;
+21> Position
+	position:static,relative,fixed,absolute, sticky
+	overlapping element, z-index:-1;
+	positioning text in image,
+
+	> topLeft
+	postion: absolute;
+	top:10px;
+	left; 20px;
+
+	>topRight
+	postion: absolute;
+	top:10px;
+	right:20px;
+
+	>bottomRight
+	postion: absolute;
+	bottom:10px;
+	right; 20px;
+
+	>bottomLeft
+	postion: absolute;
+	bottom:10px;
+	left; 20px;
+
+	>center
+	postion: absolute;
+	top: 50%;
+	width: 100%;
+	
+22> Overflow
+	overflow:visible,hidden,scroll,auto,
+	overflow-x: hidden;
+	overflow-y: scroll;
+23> Float
+	float:left,right,none,inherit;
+	clear: left;
+	:after:{
+	content: "";
+	clear: both;
+	display: table;
+}
+24> Inline-block
+	display:block;inline-block; inline;
+25> Align
+	block elements: div
+	>Center Align Elements, 
+	margin: auto; width: 50%;
+	>Center Align Text
+	text-align:center;
+	>Center an Image
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 40%;
+	>Center Vertically - Using padding
+	  padding: 70px 0;
+	 text-align:center;
+	> Center Vertically - Using line-height
+	line-height: 200px;
+  	height: 200px;
+  	border: 3px solid green;
+  	text-align: center
+	>Center Vertically - Using position & transform
+	>Center Vertically - Using Flexbox
+26> Combinators
+	>descendant selector (space) : div p
+	>child selector (>) : div > p
+	>adjacent sibling selector (+) : div + p
+	>general sibling selector (~) : div ~ p
+
+27> Pseudo-class
+	>Anchor Pseudo-classes : a:link{},:active,:visited,:hover
+	>Pseudo-classes and CSS Classes : a.className:hover{}
+	>Hover on <div> : div:hover{}
+	>Simple Tooltip Hover : div:hover p{}
+	>first child: p:first-child{}
+	>first child of p element : p i:first-child{}
+	>CSS - The :lang Pseudo-class
+29> Pseudo-element ***
+	p::first-line{}
+	p::first-letter{}
+	p.intro::first-letter{}
+	Multiple Pseudo-elements
+	::marker ( list )
+	::selection
+	h1::before{content}
+	h1::after{content:url();}
+	::marker {}
+30> Opacity 
+	opacity: .5;
+31> Navigation Bar
+	>Navbar
+	>Vertical Navbar
+		1> simple nabvar
+		2> Active/Current Navigation Link
+		3> Center Links & Add Borders
+		4> Full-height Fixed Vertical Navbar
+	>Horizontal Navbar
+		1> simple nabvar
+		2> Right-Align Links
+		3> Border Dividers
+		4> Border Dividers
+		5> Fixed Navigation Bar
+		6> Sticky Navbar
+		display:inline;
+32>Dropdowns
+33>Image Gallery
+34>Image Sprites
+35>Attr Selectors
+	a[target] {}
+	a[target="_blank"] {}
+	[title~=flower]{}
+	[class|=top]{}
+	[class$="test"] 
+	[class*="te"]
+	input[type="text"] 
+36>Forms[]
+tyling input fields
+padded Inputs
+border Inputs
+background color
+focused Inputs :focus
+input with icon image
+animated inputs\
+
+Text area : resize: none;
+Styling Input Buttons
+37>Counters
+	counter-reset:section;
+	counter-increment:section;
+	content: "Kemon" counter(section) ": ";
+38>Website Layout
+	Header
+	Navigation Bar
+	Content
+	full website with responsive
+39>Units
+	absolute unit (cm,mm,in,px,pt,pc)
+	relative unit ( em=16px,ex,ch,rem,vh,vw,vmin,vmax )
+40>Specificity
+	Inline css 
+	IDS
+	classes,attributed,and pseudo-classes
+	Elements and pseudo-elements
+41> !important
