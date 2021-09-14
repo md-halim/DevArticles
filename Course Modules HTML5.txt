@@ -73,26 +73,279 @@
 	<a> <img /></a> (image link)
 	<a href="mailto:some@gmail.com">
 15> Images
+	<img scr="" alt="" width="" height=""> 
+	image in another folder (images/ rock.jpg)
+	image in another server (https://www.thezoomit.com/images/rock.jpg )
+	animated image (.gif )
+	image as link 
+	image floating
+	image formats (APNG,GIF,ICO,JPEG, PNG, SVG )
+	> image map 
+		<img usemap = "#mapName"> 
+		<map name = "wr"> 
+			<area shape="" coords="" alt="" href="">
+		</map>
+	>background image
+	>picture elements
+	<picture>
+ 		<source media="(min-width: 650px)" srcset="img_food.jpg">
+  		<source media="(min-width: 465px)" srcset="img_car.jpg">
+  		<img src="img_girl.jpg" style="width:auto;">
+	</picture>
+	
 16> Tables
+	table container <table></table>
+	table header <th></th>
+	table row <tr></tr>
+	table cells <td></td>
+	table border table,th,td{border: 1px solid red;}
+	collapsed Table borders table,th,td{border-collapse: collapse;}
+	style table border
+	round table border
+	table, th, tr, td - height and width;
+	cell padding 
+	cell spacing
+	table rowspan ( <th rowspan ="2">
+	colspan (<th colspan="2"> )
+	table styling:
+	zebra stripes [ tr:nth-child(even,odd){background-color: red;} ]
+	combine vertical and horizontal zebra stripes
+	horizontal dividers [ tr {border-bottom: 2px solid red;} ]
+	colgroups
 17> Lists
+	>Order List
+	 <ol>
+		<li></li>
+	</ol>
+	attr: type= "1, A, a, I, i"
+	control list counting: start = "40"
+	>Unorder List
+	<ul>
+		<li></li>
+	</ul>
+	attr: type="disc,cricle,square,none" list-style-type:none;
+	>Description List
+	<dl> descript list
+	<dt> descript term
+	<dd> descript each term
+
 18> Block and Inline
+>>Block level element
+<div><address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure>footer><form><h1><h6><header><hr><li><main><nav><noscript><ol>
+<p><pre><section><table><tfoot><ul><video>
+
+>>Inline Elements
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+
 19> Classes
+	<div class="kemon">
 20> Id
+	<div id="kemon">
 21> Iframes
+	<iframe src="url" title="description" name="kemon" ></iframe>
+	<a href= "https://www.w3schools.com" target="kemon"> w3school</iframe>
 22> JavaScript
+	document.getElementById("lal").innerHTML = "kemon";
+	document.getElementByClassName().style.Color= "red";
 23> File Path
+	<img src="picture.jpg"> image and index.htm file is same folder
+	<img src="images/picture.jpg"> image in the images folder 
+	<img src="../picture.jpg"> image is located one leve up from project folder.
+
+	>> Absolute File Paths
+		<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+	>> Relative File Paths
+		<img src="/images/picture.jpg" alt="Mountain">
+		<img src="images/picture.jpg" alt="Mountain">
 24> Head
+	<head>
+		<title>A Meaningful Page Title</title>
+		<style> p{color:red} </style>
+		<link rel="stylesheet" href="mystyle.css">
+		<meta charset="UTF-8">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="author" content="John Doe">
+		<meta http-equiv="refresh" content="30">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script></script>
+		<base href="https://www.w3schools.com/" target="_blank">
 25> Layout
+	<header> - Defines a header for a document or a section
+	<nav> - Defines a set of navigation links
+	<section> - Defines a section in a document
+	<article> - Defines an independent, self-contained content
+	<aside> - Defines content aside from the content (like a sidebar)
+	<footer> - Defines a footer for a document or a section
+	<details> - Defines additional details that the user can open and close on 	demand
+	<summary> - Defines a heading for the <details> element
+
+CSS framework
+CSS float property
+CSS Flexbox
+CSS grid
+
 26> Responsive
+	>> Setting The Viewport
+		<meta name="viewport" content="width=device-width,initialscale=1.0">
+	>> Responsive Images
+		width:100%;
+		> Original size of image
+		<img src="img_girl.jpg" style="max-width:100%;height:auto;"> 
+	>> Responsive Text
+		<h1 style="font-size:10vw;">Responsive Text</h1>
+		<p style="font-size:5vw;">Resize scales.</p>
+		<p style="font-size:5vw;">Use the width.</p>
+	>> Media Queries		
+		@media screen and (max-width: 800px) {
+  			.left, .main, .right {
+   			 width: 100%;
+  			}
+		}
+	>> framework (w3c, bootstrap)
+
 27> Computer Code
+	<kbd> element defines keyboard input
+	<samp> element defines sample output from a computer program
+        <code> element defines a piece of computer code
+        <var> element defines a mathmatical expression
+        <pre> element defines preformatted text
 28> Semantics
+	>> Semantic Elements
+	<article> ( can be used Forum Post, Blog post, user-comment,product-card, 	newpaper articles )
+		<aside>
+		<details>
+		<figcaption>  ( define caption for <figure> )
+		<figure> ( self-contained content)
+		<footer>
+		<header>
+		<main>
+		<mark>
+		<nav>
+		<section> ( a sectin in document )
+		<summary>
+		<time>
 29> Style Guide
+	 Do code carefully !
 30> Entities
+	>> Some Useful HTML Character Entities
+	non-breaking space	&nbsp;	&#160;
+<	less than	&lt;	&#60;
+>	greater than	&gt;	&#62;
+&	ampersand	&amp;	&#38;
+"	double quotation mark	&quot;	&#34;
+'	single quotation mark (apostrophe)	&apos;	&#39;
+¢	cent	&cent;	&#162;
+£	pound	&pound;	&#163;
+¥	yen	&yen;	&#165;
+€	euro	&euro;	&#8364;
+©	copyright	&copy;	&#169;
+®	registered trademark	&reg;	&#174;
+
 31> Symbols
+	>>Some Mathematical Symbols Supported by HTML
+∀	&#8704;	&forall;	FOR ALL
+∂	&#8706;	&part;	PARTIAL DIFFERENTIAL
+∃	&#8707;	&exist;	THERE EXISTS
+∅	&#8709;	&empty;	EMPTY SETS
+∇	&#8711;	&nabla;	NABLA
+∈	&#8712;	&isin;	ELEMENT OF
+∉	&#8713;	&notin;	NOT AN ELEMENT OF
+∋	&#8715;	&ni;	CONTAINS AS MEMBER
+∏	&#8719;	&prod;	N-ARY PRODUCT
+∑	&#8721;	&sum;	N-ARY SUMMATION
+
+	>> Some Greek Letters Supported by HTML
+Α	&#913;	&Alpha;	GREEK CAPITAL LETTER ALPHA
+Β	&#914;	&Beta;	GREEK CAPITAL LETTER BETA
+Γ	&#915;	&Gamma;	GREEK CAPITAL LETTER GAMMA
+Δ	&#916;	&Delta;	GREEK CAPITAL LETTER DELTA
+Ε	&#917;	&Epsilon;	GREEK CAPITAL LETTER EPSILON
+Ζ	&#918;	&Zeta;	GREEK CAPITAL LETTER ZETA
+
+	>> Some Other Entities
+©	&#169;	&copy;	COPYRIGHT SIGN
+®	&#174;	&reg;	REGISTERED SIGN
+€	&#8364;	&euro;	EURO SIGN
+™	&#8482;	&trade;	TRADEMARK
+←	&#8592;	&larr;	LEFTWARDS ARROW
+↑	&#8593;	&uarr;	UPWARDS ARROW
+→	&#8594;	&rarr;	RIGHTWARDS ARROW
+↓	&#8595;	&darr;	DOWNWARDS ARROW
+♠	&#9824;	&spades;	BLACK SPADE SUIT
+♣	&#9827;	&clubs;	BLACK CLUB SUIT
+♥	&#9829;	&hearts;	BLACK HEART SUIT
+♦	&#9830;	&diams;	BLACK DIAMOND SUIT
+
+
 32> Emojis
+	<meta charset="UTF-8">
+	😄 is 128516 &#128516;
+	😍 is 128525
+	💗 is 128151
+	>> Some emojis symble in UTF-8
+Emoji	Value
+🗻	&#128507;
+🗼	&#128508;
+🗽	&#128509;
+🗾	&#128510;
+🗿	&#128511;
+😀	&#128512;
+😁	&#128513;
+😂	&#128514;
+😃	&#128515;
+😄	&#128516;
+😅	&#128517;
+
+
 33> Charset
+	ASCII:
+	0-31, 32- 126 (character, letter, digit,symble) 
+	ANSI:
+	0-127
+	128-159
+	160-255
+	
 34> URL Encode
+http	HyperText Transfer Protocol
+https	Secure HyperText Transfer Protocol
+ftp	File Transfer Protocol
+file
+	scheme://prefix.domain:port/path/filename
+scheme - defines the type of Internet service (most common is http or https)
+prefix - defines a domain prefix (default for http is www)
+domain - defines the Internet domain name (like w3schools.com)
+port - defines the port number at the host (default for http is 80)
+path - defines a path at the server (If omitted: the root directory of the site)
+filename - defines the name of a document or resource
+
+ASCII Encoding Examples
+Character	From Windows-1252	From UTF-8
+€	%80	%E2%82%AC
+£	%A3	%C2%A3
+©	%A9	%C2%A9
+®	%AE	%C2%AE
+À	%C0	%C3%80
+Á	%C1	%C3%81
+Â	%C2	%C3%82
+Ã	%C3	%C3%83
+Ä	%C4	%C3%84
+Å	%C5	%C3%85
+
+
 35> html vs xhtml
+	>>The Most Important Differences from HTML
+<!DOCTYPE> is mandatory
+The xmlns attribute in <html> is mandatory
+<html>, <head>, <title>, and <body> are mandatory
+Elements must always be properly nested
+Elements must always be closed
+Elements must always be in lowercase
+Attribute names must always be in lowercase
+Attribute values must always be quoted
+Attribute minimization is forbidden
+
+
 36> Forms
 37> Form Attributes
 38> Form Elements
